@@ -1,0 +1,26 @@
+.clock {
+    width: 20vw;
+    height: 20vw;
+}
+
+
+.clock-face {
+    position: relative;
+    border-radius: 100%;
+    border: 1rem solid black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hand {
+    transform: rotate(90deg);
+    transform-origin: center right;
+    height: 0.5rem;
+    width: 50%;
+    background-color: black;
+    position: absolute;
+    
+}
