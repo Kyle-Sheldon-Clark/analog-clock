@@ -1,3 +1,7 @@
+body {
+    background-color: rgba(240, 236, 13, 0.5);
+}
+
 .clock {
     width: 20vw;
     height: 20vw;
@@ -7,7 +11,7 @@
 .clock-face {
     position: relative;
     border-radius: 100%;
-    border: 1rem solid black;
+    border: 1rem solid rgb(0, 0, 0);
     height: 100%;
     width: 100%;
     display: flex;
@@ -20,7 +24,7 @@
     transform-origin: center right;
     height: 0.5rem;
     width: 50%;
-    background-color: black;
+    background-color: rgb(0, 0, 0);;
     position: absolute;
     border-radius: 5%;
 }
