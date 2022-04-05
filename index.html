@@ -15,5 +15,14 @@
             <div class="hand minute"></div>
         </div>
     </div>
+    <script>
+        let secondHand = document.getElementsByClassName('second');
+
+        function now() {
+            let now = new Date();
+            console.log(now.getSeconds());
+        }
+        setInterval(now, 1000);
+    </script>
 </body>
 </html>
