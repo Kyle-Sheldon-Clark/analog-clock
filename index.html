@@ -10,19 +10,26 @@
 <body>
     <div class="clock">
         <div class="clock-face">
-            <div class="hand hour"></div>
-            <div class="hand second"></div>
-            <div class="hand minute"></div>
+            <div class="hand" id="second"></div>
+            <div class="hand" id="minute"></div>
+            <div class="hand" id="hour"></div>
         </div>
     </div>
     <script>
-        let secondHand = document.getElementsByClassName('second');
+        let secondHand = document.getElementById('second');
+        let minuteHand = document.getElementById('minute');
+        let hourHand = document.getElementById('hour');
 
-        function now() {
+        function time() {
             let now = new Date();
-            console.log(now.getSeconds());
+            let degreesToRotateSeconds = ((now.getSeconds()/60)*360)+90;
+            let degreesToRotateMinutes = ((now.getMinutes()/60)*360)+90;
+            let degreesToRotateHours = ((now.getHours()/60)*360)+90;
+            secondHand.style.transform = `rotate(${degreesToRotateSeconds}deg)`;
+            minuteHand.style.transform = `rotate(${degreesToRotateMinutes}deg)`;
+            hourHand.style.transform = `rotate(${degreesToRotateHours}deg)`;
         }
-        setInterval(now, 1000);
+        setInterval(time, 1000);
     </script>
 </body>
 </html>
