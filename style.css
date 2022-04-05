@@ -22,5 +22,20 @@
     width: 50%;
     background-color: black;
     position: absolute;
-    
+    border-radius: 5%;
+}
+
+#second {
+    width: 48%;
+    margin-left: 2%;
+}
+
+#minute {
+    width: 40%;
+    margin-left: 10%;
+}
+
+#hour {
+    width: 30%;
+    margin-left: 20%;
 }
